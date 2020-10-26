@@ -23,11 +23,11 @@ armin = {
 "tests": [100.0, 100.0]
 }
 
-students = ["eren","mikasa","armin"]
-#print the student's name
-#	print the student's homework
-#	print the student's quizzes
-#	print the student's tests
+students = [eren,mikasa,armin]
 
-for class_student in students:
-    print(class_student["name"])
+for student in students:
+    print(student["name"])
+    print("homework:", student["homework"])
+    print("quizzes:", student["quizzes"])
+    print("tests:",student["tests"])
+    
