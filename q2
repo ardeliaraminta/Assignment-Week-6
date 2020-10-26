@@ -15,10 +15,20 @@ stock = {
 }
 
 #for loop is used for iterations
+
 for key in prices:
     print(key)
     print(" price: %s " % prices[key])
     print(" stock: %s " % stock[key])
+    
+   or 
+#Use the key to access value of the dictionary values
+#.format allow us do a string formatting and if {} is blank, it will pass values in str.format()
+
+for key in prices:
+    print(key)
+    print('price: {}'.format(prices[key]))
+    print('stock: {}'.format(stock[key]))
     
 # new variable : total 
 
