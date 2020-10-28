@@ -1,0 +1,22 @@
+#q9
+file = open(new_textfile, 'r', encoding= 'utf-8')
+name_titles = ['Ms.','Mr.','Dr.','Jr.','Miss','Mrs.']
+# to split 
+word = file.read().split()
+num = -1
+for w in word:
+    num += 1
+    if '!' or '?' in w:
+        if num + 1 < len(w):
+           word[counter+1] = "\n" + word[counter+1]
+    if w [-1] == ".":
+        if w in name_titles:
+            pass
+        elif counter+1 < len(word):
+            if word[counter+1][0]:
+                word[counter+1] = "\n" + words[counter+1]
+print(" ".join(word))
+
+
+
+ 
